@@ -1,0 +1,7 @@
+{
+  "AnalysisAcceptance": {"analysis_id": "analysis:demo-1", "job_id": "job:demo-1", "accepted_at": "2027-03-14T06:00:00Z", "idempotency_scope": "tenant:demo/workspace:demo/create_analysis/key:demo"},
+  "JobStatus": {"job_id": "job:demo-1", "status": "completed", "updated_at": "2027-03-14T06:01:00Z", "result_ref": "artifact:assessment-1"},
+  "ServingEnvelope": {"served_at": "2027-03-14T06:01:00Z", "policy_revision": "policy:demo-v1", "authz_revision": "authz:demo-v1", "publication_manifest_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "payload": {"artifact_ref": "artifact:assessment-1"}},
+  "ManifestView": {"manifest_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "authorized_artifacts": [{"artifact_ref": "artifact:assessment-1", "media_type": "application/json"}], "policy_revision": "policy:demo-v1", "authz_revision": "authz:demo-v1"},
+  "ResultManifest": {"manifest_version": "1.1", "release_id": "release-demo-1", "run_id": "run-demo-1", "canonicalization": "RFC8785-JCS", "digest_algorithm": "SHA-256-UTF8", "outputs": [{"artifact_ref": "artifact:assessment-1", "digest": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}]}
+}

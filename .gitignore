@@ -1,0 +1,22 @@
+# Credentials and application state
+.env
+.env.*
+!.env.example
+runtime/
+.venv/
+/node_modules/
+/.groundsense-data/
+/groundsense.db*
+*.tsbuildinfo
+__pycache__/
+.pytest_cache/
+*.pyc
+apps/web/node_modules/
+apps/web/dist/
+apps/web/dist-stage/
+apps/web/test-results/
+apps/web/playwright-report/
+*.log
+*.run.jsonl
+*.stderr.log
+qa/browser-profile/

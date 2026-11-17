@@ -1,0 +1,71 @@
+id,module,feature,stage,priority,requirement,dependency,acceptance
+F-001,Workspace,Регион и контекст организации,G0b,P0,R-01,OIDC,G0b: same-origin BFF workspace/site scope; запрос только date+mass; CSRF и cookie profile ADR-10
+F-002,Workspace,Импорт реестра промышленных объектов,G0b,P0,R-11,F-001,Объекты принадлежат tenant и имеют provenance
+F-003,Workspace,Роли dispatcher engineer field admin,G0b,P0,R-11,F-001,G0b минимум scoped engineer role; cross-site и cross-tenant denied; остальные роли G1
+F-004,Workspace,Аудит чтений и изменений,G1,P0,R-13,F-003,Экспорт и изменение evidence имеют actor и время
+F-005,Ingestion,Версионированный каталог продуктов,G0a,P0,R-10,,Каждый продукт имеет license и native support
+F-006,Ingestion,SoilGrids локальные свойства и интервалы,G0a,P0,R-09,F-005,Scale units nodata и глубины проверяются fixture
+F-007,Ingestion,DEM и гидрологические признаки,G1,P0,R-02,F-005,DSM не объявляется канавой или bare-earth DTM
+F-008,Ingestion,OSM extract и инкременты,G1,P0,R-04,F-005,Геометрии и tags хранят source version
+F-009,Ingestion,Исторические метеоданные,G0a,P0,R-02,F-005,Не происходит утечки будущей погоды в forecast backtest
+F-010,Ingestion,Открытый численный прогноз погоды,G0b,P0,R-07,F-005,Issue valid available и ingested times разделены
+F-011,Ingestion,Архив прогнозных запусков,G0b,P0,R-07,F-010,Начать удержание raw issues на WP-01; cold-start не заменяется поздним реанализом
+F-012,Ingestion,CLMS moisture и QC masks,G1,P1,R-02,F-005,Покрытие региона и product version доказаны
+F-013,Ingestion,Sentinel-1 evidence adapter,G2,P1,R-02,F-005,Орбита угол speckle terrain и vegetation masks учтены
+F-014,Ingestion,Sentinel-2 snow water canopy evidence,G2,P1,R-02,F-005,Облака снег и дата наблюдения не теряются
+F-015,Ingestion,Исторические грунтовые карты,G2,P2,R-09,F-005,Права CRS масштаб и независимость источника проверены
+F-016,Ingestion,Retries quotas checksums quarantine,G0b,P0,R-10,F-005,Повтор одного payload не создаёт дубликат
+F-017,Ingestion,Dependency-aware invalidation,G1,P0,R-06,F-016,Исправление источника создаёт новый run а не мутацию старого
+F-018,Soil,Природный профиль глубин,G1,P0,R-09,F-006,Texture и taxonomy разные сущности
+F-019,Soil,Гидравлическая parameter card и применимый PTF,G1,P0,R-09,F-018,Approved sourced priors и sensitivity; обязательные численные параметры не угадываются; не prerequisite G0b
+F-020,Soil,Конструкция и покрытие подъезда,G1,P0,R-04,F-008,Окружающая почва не подменяет материал дорожного полотна
+F-021,Soil,Source conflict и correlation groups,G2,P1,R-09,F-018,Производные одного источника не считаются независимыми измерениями
+F-022,Hydrothermal,Снег накопление и таяние,G1,P1,R-06,F-009,Отдельный G1-SnowThermal gate; снег и melt не моделируются warm-only card
+F-023,Hydrothermal,Многослойный водный баланс,G1,P0,R-06,F-019,Численный residual и границы состояния тестируются
+F-024,Hydrothermal,Thermal/snow applicability screen и abstention,G1,P0,R-06,F-009,Warm screen требует доказанной применимости; полная freeze-thaw модель за отдельным G1-SnowThermal gate
+F-025,Hydrothermal,Canopy и локальный дренаж как uncertainty,G1,P0,R-04,F-020,Неизвестный culvert не восстанавливается из DEM; не зависит от готового snowmelt
+F-026,Hydrothermal,Assimilation с observation operator,G2,P1,R-06,F-013,Недопустимый SAR не изменяет состояние
+F-027,Vehicle,Транспортный диапазон по полной массе,G1,P0,R-01,F-020,Нет единственного неаргументированного консервативного профиля
+F-028,Vehicle,Автопрофиль из fleet registry,G2,P1,R-01,F-002,Профиль выбирается без новой обязательной анкеты
+F-029,Trafficability,Environmental screening,G1,P0,R-06,F-023+F-024,Unknown required support доминирует; G0b forcing-only не выдаётся за physical screening
+F-030,Trafficability,Calibrated mechanism-specific risk,G2,P0,R-06,F-027,Домен и независимая валидация обязательны
+F-031,Trafficability,Abstention с reason codes,G0b,P0,R-06,F-005,G0b water/recovery unavailable с собственными reasons; null не становится нулевым риском
+F-032,Trafficability,Пространственная поддержка evidence,G1,P0,R-03,F-018,Длина сегмента не называется точностью прогноза
+F-033,Recovery,Прогноз улучшения состояния,G1,P0,R-08,F-023+F-024,Warm recovery требует approved card; unknown отличается от known no-confirmation-by-H
+F-034,Recovery,Восстановление для транспортного диапазона,G2,P0,R-08,F-030,Требует event definition persistence и прошедший validation gate
+F-035,Recovery,Right censoring и CDF сценарного ансамбля,G1,P0,R-08,F-033,Exact/bounds/unavailable; событие сохраняется после позднего failure; потерянный вес не перенормируется
+F-036,Recovery,Reforecast change log,G2,P1,R-08,F-011,Сравниваются issue times и причины изменения
+F-037,Map,Карта региона и известных подъездов,G0b,P0,R-03,F-008,Масса и дата видны при выборе сегмента
+F-038,Map,Слои native support и unknown,G0b,P0,R-03,F-005,G0b показывает native support forcing и штрихует отсутствие water state; позднее слой evidence
+F-039,Map,Временная шкала,G1,P0,R-07,F-037,Scrubbing не запускает raw ingestion
+F-040,Assets,Карточка скважины и подъездов,G1,P0,R-11,F-002,Связь asset access подтверждена источником
+F-041,Assets,Выявление известных bottlenecks,G2,P1,R-11,F-030,Средний благоприятный риск не скрывает неизвестный слабый сегмент
+F-042,Assets,Сравнение предоставленных подъездов,G2,P1,R-11,F-041,Сравнение не строит новые непроверенные проезды
+F-043,Field,Полевое наблюдение и фото,G1,P0,R-06,F-003,Observed и entered times различаются
+F-044,Field,CI DCP moisture protocol registry,G1,P0,R-06,F-043,Разные процедуры не сливаются в одну метрику
+F-045,Field,Проверка и adjudication evidence,G1,P0,R-06,F-044,Оригинал не переписывается при споре
+F-046,Field,Запрос осмотра,G1,P0,R-11,F-043,Задача создаётся только явным действием
+F-047,Field,Офлайн пакет с expiry,G2,P1,R-11,F-046,Устаревший пакет не показывает текущее разрешение
+F-048,Validation,Temporal spatial road holdouts,G1,P0,R-06,F-011,Одна дорога и событие не утекли между train и test
+F-049,Validation,Сравнение baseline и абляции,G1,P0,R-06,F-048,Добавление SAR оправдано фактической полезностью
+F-050,Validation,False favourable и selective coverage,G2,P0,R-06,F-030,Публикуются определения denominator и интервалы
+F-051,Validation,Environmental recovery verification G1 и vehicle calibration G2,G1,P0,R-08,F-035,Observation support и recurrence проверяются в G1; G2 calibration отдельным gate
+F-052,Validation,Model registry и publish gate,G1,P0,R-06,F-048,G0b approved forcing adapter policy; scientific validation reports добавляются в G1/G2 без автодопуска
+F-053,Operations,Atomic published manifest,G0b,P0,R-13,F-017,G0b run/release IDs без hash cycle; JCS manifest и authorized ManifestView; reservations/no-overwrite
+F-054,Operations,Job dedupe cancellation and recovery,G0b,P0,R-13,F-016,Worker crash не публикует частичный результат
+F-055,Operations,Data observatory,G0b,P0,R-02,F-016,Availability каталога не равна успешному ingestion
+F-056,Operations,Backups restore test rollback,G0b,P0,R-13,F-053,Restore до reopen сверяет withdrawals/tombstones; новый policy epoch и переаттестация scopes
+F-057,Operations,Metrics tracing and run cost,G1,P0,R-13,F-054,Есть freshness lag и scientific residual
+F-058,API,Версионированные запросы и ответы,G0b,P0,R-13,F-053,UNIQUE tenant+workspace+operation+client_key; binding и tombstone до удаления workspace
+F-059,API,Immutable results tiles exports,G1,P0,R-13,F-058,Ключи содержат tenant scope run и style version
+F-060,API,CSV GeoJSON PDF report export,G2,P1,R-11,F-059,Выгрузка содержит model version issue time expiry и ограничения
+F-061,UI,Дата и масса без погодных сценариев,G0b,P0,R-01,F-037,Другие параметры не обязательны для диспетчера
+F-062,UI,Графики физических величин и интервалов,G1,P0,R-07,F-010,G0b forcing chart; soil/recovery только после science gate; units и uncalibrated spread различимы
+F-063,UI,Грунт и дорожный материал рядом,G1,P0,R-09,F-020,Unknown construction отображается явно
+F-064,UI,Accessible text alternative и keyboard,G0b,P0,R-03,F-037,Критические действия доступны без мыши и цвета
+F-065,UI,Partial stale withdrawn offline states,G0b,P0,R-16,F-031,Нет ложного зелёного при потерянных данных
+F-066,Planning,Связь с maintenance tickets,G2,P1,R-11,F-046,Погодное окно не выдаёт автоматический наряд
+F-067,Planning,Notifications о смене оценки,G2,P2,R-07,F-036,Есть opt-in throttling и ссылка на конкретный run
+F-068,Extensions,Гражданская эвакуационная интеграция,G3,P2,R-12,F-052,Нет оценки FPV или гарантии безопасности
+F-069,Research,ML residual correction,G3,P2,R-06,F-049,Только после доказанного улучшения holdout skill
+F-070,Research,Высокодетальные съемки и датчики,G3,P2,R-04,F-050,Права стоимость и прирост качества обоснованы

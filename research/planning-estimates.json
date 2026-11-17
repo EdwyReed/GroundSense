@@ -1,0 +1,136 @@
+{
+  "label": "Planning assumptions only, not provider quotes, not scientific acceptance thresholds",
+  "workloads": {
+    "pilot": {
+      "assumptions": {
+        "units": 8000,
+        "segments": 2500,
+        "joint_trajectories": 31,
+        "time_states": 169,
+        "state_variables": 8,
+        "segment_output_variables": 6,
+        "float_bytes": 4,
+        "retained_runs": 31
+      },
+      "formulas": {
+        "state_bytes": "units * joint_trajectories * time_states * state_variables * float_bytes",
+        "segment_output_bytes": "segments * joint_trajectories * time_states * segment_output_variables * float_bytes"
+      },
+      "state_raw_GiB": 1.249074935913086,
+      "segment_output_raw_GiB": 0.2927519381046295,
+      "chunk_state_raw_MiB": 40.9296875,
+      "thirty_one_runs_state_GiB": 38.721323013305664,
+      "compression_assumed": false,
+      "benchmark": false
+    },
+    "regional": {
+      "assumptions": {
+        "units": 50000,
+        "segments": 20000,
+        "joint_trajectories": 51,
+        "time_states": 337,
+        "state_variables": 8,
+        "segment_output_variables": 6,
+        "float_bytes": 4,
+        "retained_runs": 31
+      },
+      "formulas": {
+        "state_bytes": "units * joint_trajectories * time_states * state_variables * float_bytes",
+        "segment_output_bytes": "segments * joint_trajectories * time_states * segment_output_variables * float_bytes"
+      },
+      "state_raw_GiB": 25.610625743865967,
+      "segment_output_raw_GiB": 7.68318772315979,
+      "chunk_state_raw_MiB": 134.2734375,
+      "thirty_one_runs_state_GiB": 793.929398059845,
+      "compression_assumed": false,
+      "benchmark": false
+    }
+  },
+  "G1_person_days_low": 171,
+  "G1_person_days_high": 304,
+  "G2_extra_person_days": [
+    35,
+    70
+  ],
+  "illustrative_day_rate_USD": [
+    150,
+    350
+  ],
+  "G1_development_cost_USD": [
+    25650,
+    106400
+  ],
+  "field_campaign_excluded": true,
+  "infra_scenario_monthly_USD": {
+    "api_tiles_USD": [
+      50,
+      150
+    ],
+    "science_duty_cycle_USD": [
+      80,
+      350
+    ],
+    "database_backup_USD": [
+      60,
+      250
+    ],
+    "storage_egress_USD": [
+      20,
+      150
+    ],
+    "observability_USD": [
+      0,
+      100
+    ]
+  },
+  "infra_total_monthly_USD": [
+    210,
+    1000
+  ],
+  "zero_failure_independent_binomial_trials_for_one_sided_95pct_upper_bound": {
+    "0.05": 59,
+    "0.02": 149,
+    "0.01": 299
+  },
+  "binomial_assumptions": "Independent identically distributed ascertained trials with zero observed failures; clustered segment counts do not satisfy this assumption",
+  "G0b_work_package_subset": {
+    "WP-00": [
+      2,
+      3
+    ],
+    "WP-01": [
+      5,
+      8
+    ],
+    "WP-02": [
+      4,
+      6
+    ],
+    "WP-03": [
+      3,
+      5
+    ],
+    "WP-05": [
+      10,
+      16
+    ],
+    "WP-06": [
+      7,
+      12
+    ],
+    "WP-10": [
+      7,
+      12
+    ]
+  },
+  "G0b_person_days": [
+    38,
+    62
+  ],
+  "G0b_development_cost_USD": [
+    5700,
+    21700
+  ],
+  "G0b_additive_to_G1": false,
+  "G0b_scientific_output": "forcing_only_water_and_recovery_abstain"
+}

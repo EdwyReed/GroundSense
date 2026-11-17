@@ -1,0 +1,632 @@
+[
+  {
+    "id": "F-001",
+    "feature": "Контекст організації та робочий простір",
+    "stage": "G0b",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Ізольована синтетична сесія працює; промисловий OIDC не налаштований."
+  },
+  {
+    "id": "F-002",
+    "feature": "Імпорт реєстру промислових об’єктів",
+    "stage": "G0b",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-003",
+    "feature": "Ролі диспетчера, інженера, польового фахівця й адміністратора",
+    "stage": "G0b",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Ролі перевіряються в демопросторі; немає промислового IdP/RLS/site grants."
+  },
+  {
+    "id": "F-004",
+    "feature": "Аудит читань і змін",
+    "stage": "G1",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Зміни й експорт аудіюються; повний аудит усіх читань ще не реалізовано."
+  },
+  {
+    "id": "F-005",
+    "feature": "Версіонований каталог продуктів",
+    "stage": "G0a",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-006",
+    "feature": "SoilGrids: властивості та інтервали глибин",
+    "stage": "G0a",
+    "status": "Дослідницький режим",
+    "status_code": "experimental",
+    "evidence": "packages/ingestion/adapters.py; tests/runtime_ingestion/",
+    "note": "Перевірені одиниці, глибини та nodata для наданого payload. Живе надходження не підключено."
+  },
+  {
+    "id": "F-007",
+    "feature": "DEM і похідні ознаки рельєфу",
+    "stage": "G1",
+    "status": "Дослідницький режим",
+    "status_code": "experimental",
+    "evidence": "packages/ingestion/adapters.py; tests/runtime_ingestion/",
+    "note": "Похідний ухил DSM не підтверджує канаву, дорогу або водопропускну споруду."
+  },
+  {
+    "id": "F-008",
+    "feature": "Знімки реєстру OSM та зміни",
+    "stage": "G1",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-009",
+    "feature": "Історичні метеодані",
+    "stage": "G0a",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-010",
+    "feature": "Відкритий чисельний прогноз погоди",
+    "stage": "G0b",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-011",
+    "feature": "Архів випусків прогнозу",
+    "stage": "G0b",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-012",
+    "feature": "CLMS: вологість і маски якості",
+    "stage": "G1",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-013",
+    "feature": "Адаптер свідчень Sentinel-1",
+    "stage": "G2",
+    "status": "Дослідницький режим",
+    "status_code": "experimental",
+    "evidence": "packages/ingestion/adapters.py; tests/runtime_ingestion/",
+    "note": "QC шлюз відхиляє неповні свідчення; сирий SAR-конвеєр та асиміляція не підключені."
+  },
+  {
+    "id": "F-014",
+    "feature": "Sentinel-2: сніг, вода та рослинний покрив",
+    "stage": "G2",
+    "status": "Дослідницький режим",
+    "status_code": "experimental",
+    "evidence": "packages/ingestion/adapters.py; tests/runtime_ingestion/",
+    "note": "Локальна перевірка масок; немає живого супутникового конвеєра."
+  },
+  {
+    "id": "F-015",
+    "feature": "Історичні ґрунтові карти",
+    "stage": "G2",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-016",
+    "feature": "Повторні спроби, квоти, хеші та карантин",
+    "stage": "G0b",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є хеші імпорту, дедуплікація й обмеження; немає повного зовнішнього retry/quarantine конвеєра."
+  },
+  {
+    "id": "F-017",
+    "feature": "Скасування результатів за залежностями",
+    "stage": "G1",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-018",
+    "feature": "Природний профіль глибин",
+    "stage": "G1",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-019",
+    "feature": "Гідравлічна картка параметрів і придатність PTF",
+    "stage": "G1",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-020",
+    "feature": "Конструкція та покриття під’їзду",
+    "stage": "G1",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-021",
+    "feature": "Конфлікти джерел і групи кореляції",
+    "stage": "G2",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-022",
+    "feature": "Сніг: накопичення й танення",
+    "stage": "G1",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-023",
+    "feature": "Багатошаровий водний баланс",
+    "stage": "G1",
+    "status": "Дослідницький режим",
+    "status_code": "experimental",
+    "evidence": "packages/science/engine.py; tests/runtime_science/",
+    "note": "Справжній двошаровий перехід із балансом маси; лише дослідницькі параметри."
+  },
+  {
+    "id": "F-024",
+    "feature": "Тепловий та сніговий контроль застосовності",
+    "stage": "G1",
+    "status": "Дослідницький режим",
+    "status_code": "experimental",
+    "evidence": "packages/science/engine.py; tests/runtime_science/",
+    "note": "Відмова при непідтвердженому тепловому/сніговому стані; немає повної freeze–thaw моделі."
+  },
+  {
+    "id": "F-025",
+    "feature": "Рослинний покрив і локальний дренаж",
+    "stage": "G1",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-026",
+    "feature": "Асиміляція через оператор спостереження",
+    "stage": "G2",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-027",
+    "feature": "Транспортний діапазон за повною масою",
+    "stage": "G1",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-028",
+    "feature": "Автопрофіль із реєстру автопарку",
+    "stage": "G2",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-029",
+    "feature": "Попередня оцінка природних умов",
+    "stage": "G1",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Кольори карти — задані синтетичні категорії, не розрахований фізичний screening."
+  },
+  {
+    "id": "F-030",
+    "feature": "Калібрований ризик за механізмом відмови",
+    "stage": "G2",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-031",
+    "feature": "Відмова від оцінки з кодами причин",
+    "stage": "G0b",
+    "status": "Реалізовано в прототипі",
+    "status_code": "implemented",
+    "evidence": "packages/science/engine.py; tests/runtime_science/",
+    "note": "Відсутня прохідність залишається null/unavailable, не нульовим ризиком."
+  },
+  {
+    "id": "F-032",
+    "feature": "Просторова підтримка свідчень",
+    "stage": "G1",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-033",
+    "feature": "Прогноз покращення водного стану",
+    "stage": "G1",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-034",
+    "feature": "Відновлення для транспортного діапазону",
+    "stage": "G2",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-035",
+    "feature": "Праве цензурування та CDF ансамблю сценаріїв",
+    "stage": "G1",
+    "status": "Дослідницький режим",
+    "status_code": "experimental",
+    "evidence": "packages/science/engine.py; tests/runtime_science/",
+    "note": "Дослідницькі частоти й межі; не калібровані ймовірності."
+  },
+  {
+    "id": "F-036",
+    "feature": "Журнал змін між випусками прогнозу",
+    "stage": "G2",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-037",
+    "feature": "Карта реєстру та відомих під’їздів",
+    "stage": "G0b",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-038",
+    "feature": "Шари просторової підтримки та невідомого стану",
+    "stage": "G0b",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-039",
+    "feature": "Часова шкала",
+    "stage": "G1",
+    "status": "Реалізовано в прототипі",
+    "status_code": "implemented",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Працює в ізольованому синтетичному просторі; не є production-допуском."
+  },
+  {
+    "id": "F-040",
+    "feature": "Картка свердловини й під’їздів",
+    "stage": "G1",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-041",
+    "feature": "Відомі вузькі місця доступу",
+    "stage": "G2",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-042",
+    "feature": "Порівняння наданих під’їздів",
+    "stage": "G2",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-043",
+    "feature": "Польове спостереження та фото",
+    "stage": "G1",
+    "status": "Реалізовано в прототипі",
+    "status_code": "implemented",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Працює в ізольованому синтетичному просторі; не є production-допуском."
+  },
+  {
+    "id": "F-044",
+    "feature": "Реєстр протоколів CI, DCP і вологості",
+    "stage": "G1",
+    "status": "Реалізовано в прототипі",
+    "status_code": "implemented",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Працює в ізольованому синтетичному просторі; не є production-допуском."
+  },
+  {
+    "id": "F-045",
+    "feature": "Перевірка й рецензування свідчень",
+    "stage": "G1",
+    "status": "Реалізовано в прототипі",
+    "status_code": "implemented",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Працює в ізольованому синтетичному просторі; не є production-допуском."
+  },
+  {
+    "id": "F-046",
+    "feature": "Запит польового огляду",
+    "stage": "G1",
+    "status": "Реалізовано в прототипі",
+    "status_code": "implemented",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Працює в ізольованому синтетичному просторі; не є production-допуском."
+  },
+  {
+    "id": "F-047",
+    "feature": "Офлайн-пакет зі строком дії",
+    "stage": "G2",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Експорт JSON зі строком дії та перевіркою контрольної суми; немає повної офлайн-PWA."
+  },
+  {
+    "id": "F-048",
+    "feature": "Часові, просторові та дорожні контрольні вибірки",
+    "stage": "G1",
+    "status": "Дослідницький режим",
+    "status_code": "experimental",
+    "evidence": "packages/science/engine.py; tests/runtime_science/",
+    "note": "Виконувана перевірка наданого набору не доводить походження або незалежність польових міток."
+  },
+  {
+    "id": "F-049",
+    "feature": "Порівняння базових моделей і абляцій",
+    "stage": "G1",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-050",
+    "feature": "Хибно сприятливі оцінки та охоплення",
+    "stage": "G2",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-051",
+    "feature": "Перевірка відновлення G1 і калібрування транспорту G2",
+    "stage": "G1",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "packages/science/engine.py; tests/runtime_science/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-052",
+    "feature": "Реєстр моделей і допуск до публікації",
+    "stage": "G1",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Синтетичні дані не дають production approval; промислове затвердження закрите."
+  },
+  {
+    "id": "F-053",
+    "feature": "Атомарний маніфест результату",
+    "stage": "G0b",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "SQL-збережений JCS/SHA-256 без циклу самохешування; повний ObjectStore reservation/GC протокол ще не реалізовано."
+  },
+  {
+    "id": "F-054",
+    "feature": "Дедуплікація, скасування й відновлення завдань",
+    "stage": "G0b",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Збережені завдання, ідемпотентність і атомарне скасування; повний crash/lease recovery ще не реалізовано."
+  },
+  {
+    "id": "F-055",
+    "feature": "Нагляд за надходженням даних",
+    "stage": "G0b",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Стан каталогу відокремлений від ingestion; живі надходження не підключені."
+  },
+  {
+    "id": "F-056",
+    "feature": "Резервні копії, відновлення та відкат",
+    "stage": "G0b",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Промислове відновлення не допускається без ADR11 receipt та повторної атестації."
+  },
+  {
+    "id": "F-057",
+    "feature": "Метрики, трасування й вартість запуску",
+    "stage": "G1",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-058",
+    "feature": "Версіоновані запити та відповіді API",
+    "stage": "G0b",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Версія прототипу відокремлена від майбутнього production contract1.1; не весь ADR реалізований."
+  },
+  {
+    "id": "F-059",
+    "feature": "Незмінні результати, шари й експорти",
+    "stage": "G1",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-060",
+    "feature": "Експорт CSV, GeoJSON і PDF",
+    "stage": "G2",
+    "status": "Реалізовано в прототипі",
+    "status_code": "implemented",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Фактичні приватні CSV/GeoJSON/PDF; звіт містить застереження, український шрифт і строк дії."
+  },
+  {
+    "id": "F-061",
+    "feature": "Дата та маса без обов’язкових погодних сценаріїв",
+    "stage": "G0b",
+    "status": "Реалізовано в прототипі",
+    "status_code": "implemented",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Працює в ізольованому синтетичному просторі; не є production-допуском."
+  },
+  {
+    "id": "F-062",
+    "feature": "Графіки величин і невизначеності",
+    "stage": "G1",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Показується обчислена синтетична траєкторія; відсутній ансамбль не замінюється вигаданим інтервалом."
+  },
+  {
+    "id": "F-063",
+    "feature": "Природний ґрунт поруч із дорожнім матеріалом",
+    "stage": "G1",
+    "status": "Реалізовано в прототипі",
+    "status_code": "implemented",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Працює в ізольованому синтетичному просторі; не є production-допуском."
+  },
+  {
+    "id": "F-064",
+    "feature": "Текстові альтернативи та керування клавіатурою",
+    "stage": "G0b",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-065",
+    "feature": "Неповні, застарілі, відкликані й офлайн-дані",
+    "stage": "G0b",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Невідомість/відкликання відображаються, але повний production cache/revocation протокол не сертифікований."
+  },
+  {
+    "id": "F-066",
+    "feature": "Зв’язок із заявками на обслуговування",
+    "stage": "G2",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Є локальні операції/інтерфейс; повні виробничі критерії цієї функції ще не виконано."
+  },
+  {
+    "id": "F-067",
+    "feature": "Сповіщення про зміну оцінки",
+    "stage": "G2",
+    "status": "Частково",
+    "status_code": "partial",
+    "evidence": "apps/api/main.py; apps/web/src/; tests/runtime_api/",
+    "note": "Можна зберегти підписку, але зовнішня доставка не виконується без окремого налаштування та дозволу."
+  },
+  {
+    "id": "F-068",
+    "feature": "Громадянська евакуаційна інтеграція",
+    "stage": "G3",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-069",
+    "feature": "ML-корекція залишків",
+    "stage": "G3",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  },
+  {
+    "id": "F-070",
+    "feature": "Детальні знімання й датчики",
+    "stage": "G3",
+    "status": "Недоступно",
+    "status_code": "blocked",
+    "evidence": "docs/FEATURE-MAP.csv; docs/09-SECURITY-PUBLICATION-ADR.md",
+    "note": "Потрібні дозволений зовнішній набір, адаптер, польові дані та/або окремий науковий допуск."
+  }
+]

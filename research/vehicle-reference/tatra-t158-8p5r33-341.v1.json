@@ -1,0 +1,43 @@
+{
+  "profile_id": "tatra-t158-8p5r33-341-reference-v1",
+  "model_code_literal": "T 158-8P5R33.341",
+  "scope": "documented_reference_only",
+  "mass_basis": "vehicle_gross_not_combination",
+  "nominal_chassis_without_body_kg": 10250,
+  "gross_vehicle_limit_kg": 30000,
+  "axle_upper_limits_kg": [
+    9000,
+    11500,
+    11500
+  ],
+  "nominal_chassis_axle_loads_kg": [
+    5900,
+    2175,
+    2175
+  ],
+  "source": {
+    "url": "https://tatra-trucks.com/wp-content/uploads/2023/10/TATRA-T158-8P5R33-6x6_3-way-tipper_EN-2.pdf",
+    "cached_pdf": ".groundsense-data/research/vehicle-loading/tatra-t158-8p5r33-341-reference.pdf",
+    "distribution": "third_party_copy_not_direct_publisher",
+    "original_publisher_label": "TATRA TRUCKS a.s.",
+    "page": 2,
+    "document_date": null,
+    "commercial_reuse": "not_established",
+    "sha256": "001e0508c83de41e9c460385332febe7ec2a725fa561d70d7ca49abb123803be",
+    "retrieved_at": "2026-10-26T20:49:11.576935+00:00"
+  },
+  "missing_inputs": [
+    "loaded_axle_distribution",
+    "body_mass_and_payload_separation",
+    "centre_of_mass",
+    "wheel_contact_and_pressure",
+    "soil_response"
+  ],
+  "not_user_fleet": true,
+  "notes": [
+    "Source facts transcribed from the actual page-2 WEIGHTS table, checked against the rendered PDF.",
+    "Factory nominal chassis axle loads are not lower bounds for loaded axles.",
+    "Document age is unknown; the URL upload path is not an observation/publication date.",
+    "This reference is not a default mapping for the app category truck_6x6."
+  ]
+}

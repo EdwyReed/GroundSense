@@ -1,0 +1,2950 @@
+{
+  "workspace": {
+    "id": "demo",
+    "name": "Демонстраційний простір",
+    "timezone": "Europe/Kyiv",
+    "synthetic": true,
+    "description": "Умовні об’єкти, не реальна географія. Прохідність не підтверджено."
+  },
+  "context": {
+    "assessment_date": "2026-10-25",
+    "gross_mass_t": 20,
+    "selected_asset_id": "GS-014",
+    "synthetic": true
+  },
+  "assets": [
+    {
+      "id": "GS-001",
+      "name": "Свердловина GS-001",
+      "type": "well",
+      "condition": "less_adverse",
+      "reason": "Демонстраційна класифікація природних умов; дорожня конструкція не перевірена.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.052,
+          0.049
+        ]
+      },
+      "segment_ids": [],
+      "synthetic": true,
+      "source_ref": "synthetic-registry/v1",
+      "version": 1
+    },
+    {
+      "id": "GS-002",
+      "name": "Свердловина GS-002",
+      "type": "well",
+      "condition": "unknown",
+      "reason": "Демонстраційна класифікація природних умов; дорожня конструкція не перевірена.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.043,
+          0.019
+        ]
+      },
+      "segment_ids": [],
+      "synthetic": true,
+      "source_ref": "synthetic-registry/v1",
+      "version": 1
+    },
+    {
+      "id": "GS-003",
+      "name": "Свердловина GS-003",
+      "type": "well",
+      "condition": "adverse",
+      "reason": "Демонстраційна класифікація природних умов; дорожня конструкція не перевірена.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.036,
+          0.037
+        ]
+      },
+      "segment_ids": [],
+      "synthetic": true,
+      "source_ref": "synthetic-registry/v1",
+      "version": 1
+    },
+    {
+      "id": "GS-004",
+      "name": "Свердловина GS-004",
+      "type": "well",
+      "condition": "less_adverse",
+      "reason": "Демонстраційна класифікація природних умов; дорожня конструкція не перевірена.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.017,
+          0.032
+        ]
+      },
+      "segment_ids": [],
+      "synthetic": true,
+      "source_ref": "synthetic-registry/v1",
+      "version": 1
+    },
+    {
+      "id": "GS-005",
+      "name": "Свердловина GS-005",
+      "type": "well",
+      "condition": "severe",
+      "reason": "Демонстраційна класифікація природних умов; дорожня конструкція не перевірена.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.05,
+          0.076
+        ]
+      },
+      "segment_ids": [],
+      "synthetic": true,
+      "source_ref": "synthetic-registry/v1",
+      "version": 1
+    },
+    {
+      "id": "GS-006",
+      "name": "Свердловина GS-006",
+      "type": "well",
+      "condition": "less_adverse",
+      "reason": "Демонстраційна класифікація природних умов; дорожня конструкція не перевірена.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.016,
+          0.016
+        ]
+      },
+      "segment_ids": [],
+      "synthetic": true,
+      "source_ref": "synthetic-registry/v1",
+      "version": 1
+    },
+    {
+      "id": "GS-007",
+      "name": "Свердловина GS-007",
+      "type": "well",
+      "condition": "adverse",
+      "reason": "Демонстраційна класифікація природних умов; дорожня конструкція не перевірена.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.034,
+          0.058
+        ]
+      },
+      "segment_ids": [],
+      "synthetic": true,
+      "source_ref": "synthetic-registry/v1",
+      "version": 1
+    },
+    {
+      "id": "GS-008",
+      "name": "Свердловина GS-008",
+      "type": "well",
+      "condition": "unknown",
+      "reason": "Демонстраційна класифікація природних умов; дорожня конструкція не перевірена.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.078,
+          0.069
+        ]
+      },
+      "segment_ids": [],
+      "synthetic": true,
+      "source_ref": "synthetic-registry/v1",
+      "version": 1
+    },
+    {
+      "id": "GS-009",
+      "name": "Свердловина GS-009",
+      "type": "well",
+      "condition": "adverse",
+      "reason": "Демонстраційна класифікація природних умов; дорожня конструкція не перевірена.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.085,
+          0.04
+        ]
+      },
+      "segment_ids": [],
+      "synthetic": true,
+      "source_ref": "synthetic-registry/v1",
+      "version": 1
+    },
+    {
+      "id": "GS-010",
+      "name": "Свердловина GS-010",
+      "type": "well",
+      "condition": "severe",
+      "reason": "Демонстраційна класифікація природних умов; дорожня конструкція не перевірена.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.076,
+          0.085
+        ]
+      },
+      "segment_ids": [],
+      "synthetic": true,
+      "source_ref": "synthetic-registry/v1",
+      "version": 1
+    },
+    {
+      "id": "GS-011",
+      "name": "Свердловина GS-011",
+      "type": "well",
+      "condition": "unknown",
+      "reason": "Демонстраційна класифікація природних умов; дорожня конструкція не перевірена.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.073,
+          0.019
+        ]
+      },
+      "segment_ids": [],
+      "synthetic": true,
+      "source_ref": "synthetic-registry/v1",
+      "version": 1
+    },
+    {
+      "id": "GS-014",
+      "name": "Свердловина GS-014",
+      "type": "well",
+      "condition": "adverse",
+      "reason": "Демонстраційна класифікація природних умов; дорожня конструкція не перевірена.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.067,
+          0.055
+        ]
+      },
+      "segment_ids": [
+        "GS-R01",
+        "GS-R02",
+        "GS-R03"
+      ],
+      "synthetic": true,
+      "source_ref": "synthetic-registry/v1",
+      "version": 1
+    }
+  ],
+  "segments": [
+    {
+      "id": "GS-R01",
+      "asset_id": "GS-014",
+      "length_m": 800,
+      "surface": "gravel",
+      "construction": "unknown",
+      "drainage": "unknown",
+      "culvert_status": "unknown",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.016,
+            0.016
+          ],
+          [
+            0.021,
+            0.031
+          ],
+          [
+            0.036,
+            0.037
+          ]
+        ]
+      },
+      "source_ref": "synthetic-network/v1",
+      "version": 1,
+      "synthetic": true
+    },
+    {
+      "id": "GS-R02",
+      "asset_id": "GS-014",
+      "length_m": 1200,
+      "surface": "ground",
+      "construction": "unknown",
+      "drainage": "unknown",
+      "culvert_status": "unknown",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.034,
+            0.058
+          ],
+          [
+            0.035,
+            0.049
+          ],
+          [
+            0.036,
+            0.037
+          ]
+        ]
+      },
+      "source_ref": "synthetic-network/v1",
+      "version": 1,
+      "synthetic": true
+    },
+    {
+      "id": "GS-R03",
+      "asset_id": "GS-014",
+      "length_m": 500,
+      "surface": "unknown",
+      "construction": "unknown",
+      "drainage": "unknown",
+      "culvert_status": "unknown",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.036,
+            0.037
+          ],
+          [
+            0.055,
+            0.039
+          ],
+          [
+            0.06,
+            0.05
+          ],
+          [
+            0.067,
+            0.055
+          ]
+        ]
+      },
+      "source_ref": "synthetic-network/v1",
+      "version": 1,
+      "synthetic": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "soilgrids",
+      "name": "SoilGrids 2.0",
+      "product": "SoilGrids 2.0",
+      "version": "catalog-v1",
+      "support": "250 м",
+      "status": "static",
+      "qc": "not_checked",
+      "note": "Збережений синтетичний профіль",
+      "url": "https://docs.isric.org/globaldata/soilgrids/",
+      "license": "Перевірити умови конкретного продукту",
+      "ingested_at": null,
+      "valid_time": null,
+      "synthetic": true
+    },
+    {
+      "id": "weather",
+      "name": "Відкритий прогноз погоди",
+      "product": "Відкритий прогноз погоди",
+      "version": "catalog-v1",
+      "support": "Залежить від моделі",
+      "status": "not_connected",
+      "qc": "not_checked",
+      "note": "Адаптер не підключено",
+      "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data",
+      "license": "Перевірити умови конкретного продукту",
+      "ingested_at": null,
+      "valid_time": null,
+      "synthetic": false
+    },
+    {
+      "id": "era5",
+      "name": "ERA5-Land",
+      "product": "ERA5-Land",
+      "version": "catalog-v1",
+      "support": "близько 9 км",
+      "status": "not_connected",
+      "qc": "not_checked",
+      "note": "Потрібні CDS credentials / імпорт",
+      "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land",
+      "license": "Перевірити умови конкретного продукту",
+      "ingested_at": null,
+      "valid_time": null,
+      "synthetic": false
+    },
+    {
+      "id": "dem",
+      "name": "Copernicus DEM GLO-30",
+      "product": "Copernicus DEM GLO-30",
+      "version": "catalog-v1",
+      "support": "30 м",
+      "status": "not_connected",
+      "qc": "not_checked",
+      "note": "DSM, не вимірювання канави",
+      "url": "https://dataspace.copernicus.eu/",
+      "license": "Перевірити умови конкретного продукту",
+      "ingested_at": null,
+      "valid_time": null,
+      "synthetic": false
+    },
+    {
+      "id": "osm",
+      "name": "OpenStreetMap extract",
+      "product": "OpenStreetMap extract",
+      "version": "catalog-v1",
+      "support": "Векторний реєстр",
+      "status": "not_connected",
+      "qc": "not_checked",
+      "note": "Потрібен дозволений знімок реєстру",
+      "url": "https://www.openstreetmap.org/copyright",
+      "license": "Перевірити умови конкретного продукту",
+      "ingested_at": null,
+      "valid_time": null,
+      "synthetic": false
+    },
+    {
+      "id": "s1",
+      "name": "Sentinel-1",
+      "product": "Sentinel-1",
+      "version": "catalog-v1",
+      "support": "Залежить від продукту",
+      "status": "qc_rejected",
+      "qc": "rejected",
+      "note": "Демо: спостереження відхилено; не використано",
+      "url": "https://sentiwiki.copernicus.eu/",
+      "license": "Перевірити умови конкретного продукту",
+      "ingested_at": null,
+      "valid_time": null,
+      "synthetic": true
+    },
+    {
+      "id": "s2",
+      "name": "Sentinel-2 L2A",
+      "product": "Sentinel-2 L2A",
+      "version": "catalog-v1",
+      "support": "10–20 м (канали)",
+      "status": "not_connected",
+      "qc": "not_checked",
+      "note": "Хмари та полог обмежують спостереження",
+      "url": "https://sentiwiki.copernicus.eu/",
+      "license": "Перевірити умови конкретного продукту",
+      "ingested_at": null,
+      "valid_time": null,
+      "synthetic": false
+    },
+    {
+      "id": "swi",
+      "name": "Copernicus SWI",
+      "product": "Copernicus SWI",
+      "version": "catalog-v1",
+      "support": "1 км",
+      "status": "coverage_unknown",
+      "qc": "not_checked",
+      "note": "Покриття області не підтверджено",
+      "url": "https://land.copernicus.eu/",
+      "license": "Перевірити умови конкретного продукту",
+      "ingested_at": null,
+      "valid_time": null,
+      "synthetic": false
+    },
+    {
+      "id": "historical",
+      "name": "Історичні ґрунтові карти",
+      "product": "Історичні ґрунтові карти",
+      "version": "catalog-v1",
+      "support": "Масштаб джерела",
+      "status": "license_pending",
+      "qc": "not_checked",
+      "note": "Права на використання не підтверджено",
+      "url": "https://esdac.jrc.ec.europa.eu/",
+      "license": "Перевірити умови конкретного продукту",
+      "ingested_at": null,
+      "valid_time": null,
+      "synthetic": false
+    }
+  ],
+  "soil": {
+    "texture_class": "Суглинок (демо)",
+    "taxonomy": null,
+    "composition": {
+      "sand": 40,
+      "silt": 38,
+      "clay": 22
+    },
+    "composition_depth_cm": [
+      0,
+      5
+    ],
+    "depths": [
+      {
+        "top_cm": 0,
+        "bottom_cm": 5,
+        "estimate_kind": "modelled",
+        "texture": "Суглинок (демо)"
+      },
+      {
+        "top_cm": 5,
+        "bottom_cm": 15,
+        "estimate_kind": "modelled",
+        "texture": "Суглинок (демо)"
+      },
+      {
+        "top_cm": 15,
+        "bottom_cm": 30,
+        "estimate_kind": "modelled",
+        "texture": "Суглинок (демо)"
+      },
+      {
+        "top_cm": 30,
+        "bottom_cm": 60,
+        "estimate_kind": "modelled",
+        "texture": "Суглинок (демо)"
+      },
+      {
+        "top_cm": 60,
+        "bottom_cm": 100,
+        "estimate_kind": "modelled",
+        "texture": "Суглинок (демо)"
+      },
+      {
+        "top_cm": 100,
+        "bottom_cm": 200,
+        "estimate_kind": "modelled",
+        "texture": "Суглинок (демо)"
+      }
+    ],
+    "source": "SoilGrids · синтетичний приклад",
+    "support_m": 250,
+    "hydraulic_status": "not_approved"
+  },
+  "map": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#b3b99a"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0003,
+                0.0003
+              ],
+              [
+                0.0136,
+                0.0002
+              ],
+              [
+                0.0134,
+                0.0139
+              ],
+              [
+                0.0002,
+                0.014
+              ],
+              [
+                0.0003,
+                0.0003
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d9cfac"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0143,
+                0.0003
+              ],
+              [
+                0.0276,
+                0.0002
+              ],
+              [
+                0.0274,
+                0.0139
+              ],
+              [
+                0.0142,
+                0.014
+              ],
+              [
+                0.0143,
+                0.0003
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#c8c79b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0283,
+                0.0003
+              ],
+              [
+                0.0416,
+                0.0002
+              ],
+              [
+                0.0414,
+                0.0139
+              ],
+              [
+                0.0282,
+                0.014
+              ],
+              [
+                0.0283,
+                0.0003
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d9cfac"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0423,
+                0.0003
+              ],
+              [
+                0.0556,
+                0.0002
+              ],
+              [
+                0.0554,
+                0.0139
+              ],
+              [
+                0.0422,
+                0.014
+              ],
+              [
+                0.0423,
+                0.0003
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d6cea8"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0563,
+                0.0003
+              ],
+              [
+                0.0696,
+                0.0002
+              ],
+              [
+                0.0694,
+                0.0139
+              ],
+              [
+                0.0562,
+                0.014
+              ],
+              [
+                0.0563,
+                0.0003
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#aeb98b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0703,
+                0.0003
+              ],
+              [
+                0.0836,
+                0.0002
+              ],
+              [
+                0.0834,
+                0.0139
+              ],
+              [
+                0.0702,
+                0.014
+              ],
+              [
+                0.0703,
+                0.0003
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#dfd4b7"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0843,
+                0.0003
+              ],
+              [
+                0.0976,
+                0.0002
+              ],
+              [
+                0.0974,
+                0.0139
+              ],
+              [
+                0.0842,
+                0.014
+              ],
+              [
+                0.0843,
+                0.0003
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#aeb98b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0983,
+                0.0003
+              ],
+              [
+                0.1116,
+                0.0002
+              ],
+              [
+                0.1114,
+                0.0139
+              ],
+              [
+                0.0982,
+                0.014
+              ],
+              [
+                0.0983,
+                0.0003
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d9cfac"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0003,
+                0.0148
+              ],
+              [
+                0.0136,
+                0.0147
+              ],
+              [
+                0.0134,
+                0.0284
+              ],
+              [
+                0.0002,
+                0.0285
+              ],
+              [
+                0.0003,
+                0.0148
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#b3b99a"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0143,
+                0.0148
+              ],
+              [
+                0.0276,
+                0.0147
+              ],
+              [
+                0.0274,
+                0.0284
+              ],
+              [
+                0.0142,
+                0.0285
+              ],
+              [
+                0.0143,
+                0.0148
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d9cfac"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0283,
+                0.0148
+              ],
+              [
+                0.0416,
+                0.0147
+              ],
+              [
+                0.0414,
+                0.0284
+              ],
+              [
+                0.0282,
+                0.0285
+              ],
+              [
+                0.0283,
+                0.0148
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d9cfac"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0423,
+                0.0148
+              ],
+              [
+                0.0556,
+                0.0147
+              ],
+              [
+                0.0554,
+                0.0284
+              ],
+              [
+                0.0422,
+                0.0285
+              ],
+              [
+                0.0423,
+                0.0148
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#c8c79b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0563,
+                0.0148
+              ],
+              [
+                0.0696,
+                0.0147
+              ],
+              [
+                0.0694,
+                0.0284
+              ],
+              [
+                0.0562,
+                0.0285
+              ],
+              [
+                0.0563,
+                0.0148
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#aeb98b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0703,
+                0.0148
+              ],
+              [
+                0.0836,
+                0.0147
+              ],
+              [
+                0.0834,
+                0.0284
+              ],
+              [
+                0.0702,
+                0.0285
+              ],
+              [
+                0.0703,
+                0.0148
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#dfd4b7"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0843,
+                0.0148
+              ],
+              [
+                0.0976,
+                0.0147
+              ],
+              [
+                0.0974,
+                0.0284
+              ],
+              [
+                0.0842,
+                0.0285
+              ],
+              [
+                0.0843,
+                0.0148
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d9cfac"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0983,
+                0.0148
+              ],
+              [
+                0.1116,
+                0.0147
+              ],
+              [
+                0.1114,
+                0.0284
+              ],
+              [
+                0.0982,
+                0.0285
+              ],
+              [
+                0.0983,
+                0.0148
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#c8c79b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0003,
+                0.0293
+              ],
+              [
+                0.0136,
+                0.0292
+              ],
+              [
+                0.0134,
+                0.0429
+              ],
+              [
+                0.0002,
+                0.043
+              ],
+              [
+                0.0003,
+                0.0293
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#c8c79b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0143,
+                0.0293
+              ],
+              [
+                0.0276,
+                0.0292
+              ],
+              [
+                0.0274,
+                0.0429
+              ],
+              [
+                0.0142,
+                0.043
+              ],
+              [
+                0.0143,
+                0.0293
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d6cea8"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0283,
+                0.0293
+              ],
+              [
+                0.0416,
+                0.0292
+              ],
+              [
+                0.0414,
+                0.0429
+              ],
+              [
+                0.0282,
+                0.043
+              ],
+              [
+                0.0283,
+                0.0293
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d6cea8"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0423,
+                0.0293
+              ],
+              [
+                0.0556,
+                0.0292
+              ],
+              [
+                0.0554,
+                0.0429
+              ],
+              [
+                0.0422,
+                0.043
+              ],
+              [
+                0.0423,
+                0.0293
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#b3b99a"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0563,
+                0.0293
+              ],
+              [
+                0.0696,
+                0.0292
+              ],
+              [
+                0.0694,
+                0.0429
+              ],
+              [
+                0.0562,
+                0.043
+              ],
+              [
+                0.0563,
+                0.0293
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#c8c79b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0703,
+                0.0293
+              ],
+              [
+                0.0836,
+                0.0292
+              ],
+              [
+                0.0834,
+                0.0429
+              ],
+              [
+                0.0702,
+                0.043
+              ],
+              [
+                0.0703,
+                0.0293
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#aeb98b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0843,
+                0.0293
+              ],
+              [
+                0.0976,
+                0.0292
+              ],
+              [
+                0.0974,
+                0.0429
+              ],
+              [
+                0.0842,
+                0.043
+              ],
+              [
+                0.0843,
+                0.0293
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#b3b99a"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0983,
+                0.0293
+              ],
+              [
+                0.1116,
+                0.0292
+              ],
+              [
+                0.1114,
+                0.0429
+              ],
+              [
+                0.0982,
+                0.043
+              ],
+              [
+                0.0983,
+                0.0293
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#dfd4b7"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0003,
+                0.0438
+              ],
+              [
+                0.0136,
+                0.0437
+              ],
+              [
+                0.0134,
+                0.0574
+              ],
+              [
+                0.0002,
+                0.0575
+              ],
+              [
+                0.0003,
+                0.0438
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d9cfac"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0143,
+                0.0438
+              ],
+              [
+                0.0276,
+                0.0437
+              ],
+              [
+                0.0274,
+                0.0574
+              ],
+              [
+                0.0142,
+                0.0575
+              ],
+              [
+                0.0143,
+                0.0438
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#dfd4b7"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0283,
+                0.0438
+              ],
+              [
+                0.0416,
+                0.0437
+              ],
+              [
+                0.0414,
+                0.0574
+              ],
+              [
+                0.0282,
+                0.0575
+              ],
+              [
+                0.0283,
+                0.0438
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d9cfac"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0423,
+                0.0438
+              ],
+              [
+                0.0556,
+                0.0437
+              ],
+              [
+                0.0554,
+                0.0574
+              ],
+              [
+                0.0422,
+                0.0575
+              ],
+              [
+                0.0423,
+                0.0438
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#dfd4b7"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0563,
+                0.0438
+              ],
+              [
+                0.0696,
+                0.0437
+              ],
+              [
+                0.0694,
+                0.0574
+              ],
+              [
+                0.0562,
+                0.0575
+              ],
+              [
+                0.0563,
+                0.0438
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#c8c79b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0703,
+                0.0438
+              ],
+              [
+                0.0836,
+                0.0437
+              ],
+              [
+                0.0834,
+                0.0574
+              ],
+              [
+                0.0702,
+                0.0575
+              ],
+              [
+                0.0703,
+                0.0438
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#aeb98b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0843,
+                0.0438
+              ],
+              [
+                0.0976,
+                0.0437
+              ],
+              [
+                0.0974,
+                0.0574
+              ],
+              [
+                0.0842,
+                0.0575
+              ],
+              [
+                0.0843,
+                0.0438
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#b3b99a"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0983,
+                0.0438
+              ],
+              [
+                0.1116,
+                0.0437
+              ],
+              [
+                0.1114,
+                0.0574
+              ],
+              [
+                0.0982,
+                0.0575
+              ],
+              [
+                0.0983,
+                0.0438
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d6cea8"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0003,
+                0.0583
+              ],
+              [
+                0.0136,
+                0.0582
+              ],
+              [
+                0.0134,
+                0.0719
+              ],
+              [
+                0.0002,
+                0.072
+              ],
+              [
+                0.0003,
+                0.0583
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#b3b99a"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0143,
+                0.0583
+              ],
+              [
+                0.0276,
+                0.0582
+              ],
+              [
+                0.0274,
+                0.0719
+              ],
+              [
+                0.0142,
+                0.072
+              ],
+              [
+                0.0143,
+                0.0583
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#c8c79b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0283,
+                0.0583
+              ],
+              [
+                0.0416,
+                0.0582
+              ],
+              [
+                0.0414,
+                0.0719
+              ],
+              [
+                0.0282,
+                0.072
+              ],
+              [
+                0.0283,
+                0.0583
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#b3b99a"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0423,
+                0.0583
+              ],
+              [
+                0.0556,
+                0.0582
+              ],
+              [
+                0.0554,
+                0.0719
+              ],
+              [
+                0.0422,
+                0.072
+              ],
+              [
+                0.0423,
+                0.0583
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d6cea8"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0563,
+                0.0583
+              ],
+              [
+                0.0696,
+                0.0582
+              ],
+              [
+                0.0694,
+                0.0719
+              ],
+              [
+                0.0562,
+                0.072
+              ],
+              [
+                0.0563,
+                0.0583
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#aeb98b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0703,
+                0.0583
+              ],
+              [
+                0.0836,
+                0.0582
+              ],
+              [
+                0.0834,
+                0.0719
+              ],
+              [
+                0.0702,
+                0.072
+              ],
+              [
+                0.0703,
+                0.0583
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#aeb98b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0843,
+                0.0583
+              ],
+              [
+                0.0976,
+                0.0582
+              ],
+              [
+                0.0974,
+                0.0719
+              ],
+              [
+                0.0842,
+                0.072
+              ],
+              [
+                0.0843,
+                0.0583
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#aeb98b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0983,
+                0.0583
+              ],
+              [
+                0.1116,
+                0.0582
+              ],
+              [
+                0.1114,
+                0.0719
+              ],
+              [
+                0.0982,
+                0.072
+              ],
+              [
+                0.0983,
+                0.0583
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d6cea8"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0003,
+                0.0728
+              ],
+              [
+                0.0136,
+                0.0727
+              ],
+              [
+                0.0134,
+                0.0864
+              ],
+              [
+                0.0002,
+                0.0865
+              ],
+              [
+                0.0003,
+                0.0728
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#c8c79b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0143,
+                0.0728
+              ],
+              [
+                0.0276,
+                0.0727
+              ],
+              [
+                0.0274,
+                0.0864
+              ],
+              [
+                0.0142,
+                0.0865
+              ],
+              [
+                0.0143,
+                0.0728
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#aeb98b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0283,
+                0.0728
+              ],
+              [
+                0.0416,
+                0.0727
+              ],
+              [
+                0.0414,
+                0.0864
+              ],
+              [
+                0.0282,
+                0.0865
+              ],
+              [
+                0.0283,
+                0.0728
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#aeb98b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0423,
+                0.0728
+              ],
+              [
+                0.0556,
+                0.0727
+              ],
+              [
+                0.0554,
+                0.0864
+              ],
+              [
+                0.0422,
+                0.0865
+              ],
+              [
+                0.0423,
+                0.0728
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#b3b99a"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0563,
+                0.0728
+              ],
+              [
+                0.0696,
+                0.0727
+              ],
+              [
+                0.0694,
+                0.0864
+              ],
+              [
+                0.0562,
+                0.0865
+              ],
+              [
+                0.0563,
+                0.0728
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d6cea8"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0703,
+                0.0728
+              ],
+              [
+                0.0836,
+                0.0727
+              ],
+              [
+                0.0834,
+                0.0864
+              ],
+              [
+                0.0702,
+                0.0865
+              ],
+              [
+                0.0703,
+                0.0728
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d9cfac"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0843,
+                0.0728
+              ],
+              [
+                0.0976,
+                0.0727
+              ],
+              [
+                0.0974,
+                0.0864
+              ],
+              [
+                0.0842,
+                0.0865
+              ],
+              [
+                0.0843,
+                0.0728
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#dfd4b7"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0983,
+                0.0728
+              ],
+              [
+                0.1116,
+                0.0727
+              ],
+              [
+                0.1114,
+                0.0864
+              ],
+              [
+                0.0982,
+                0.0865
+              ],
+              [
+                0.0983,
+                0.0728
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#b3b99a"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0003,
+                0.0873
+              ],
+              [
+                0.0136,
+                0.0872
+              ],
+              [
+                0.0134,
+                0.1009
+              ],
+              [
+                0.0002,
+                0.101
+              ],
+              [
+                0.0003,
+                0.0873
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#aeb98b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0143,
+                0.0873
+              ],
+              [
+                0.0276,
+                0.0872
+              ],
+              [
+                0.0274,
+                0.1009
+              ],
+              [
+                0.0142,
+                0.101
+              ],
+              [
+                0.0143,
+                0.0873
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d9cfac"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0283,
+                0.0873
+              ],
+              [
+                0.0416,
+                0.0872
+              ],
+              [
+                0.0414,
+                0.1009
+              ],
+              [
+                0.0282,
+                0.101
+              ],
+              [
+                0.0283,
+                0.0873
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#d9cfac"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0423,
+                0.0873
+              ],
+              [
+                0.0556,
+                0.0872
+              ],
+              [
+                0.0554,
+                0.1009
+              ],
+              [
+                0.0422,
+                0.101
+              ],
+              [
+                0.0423,
+                0.0873
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#b3b99a"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0563,
+                0.0873
+              ],
+              [
+                0.0696,
+                0.0872
+              ],
+              [
+                0.0694,
+                0.1009
+              ],
+              [
+                0.0562,
+                0.101
+              ],
+              [
+                0.0563,
+                0.0873
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#dfd4b7"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0703,
+                0.0873
+              ],
+              [
+                0.0836,
+                0.0872
+              ],
+              [
+                0.0834,
+                0.1009
+              ],
+              [
+                0.0702,
+                0.101
+              ],
+              [
+                0.0703,
+                0.0873
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#c8c79b"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0843,
+                0.0873
+              ],
+              [
+                0.0976,
+                0.0872
+              ],
+              [
+                0.0974,
+                0.1009
+              ],
+              [
+                0.0842,
+                0.101
+              ],
+              [
+                0.0843,
+                0.0873
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "field",
+          "color": "#b3b99a"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0983,
+                0.0873
+              ],
+              [
+                0.1116,
+                0.0872
+              ],
+              [
+                0.1114,
+                0.1009
+              ],
+              [
+                0.0982,
+                0.101
+              ],
+              [
+                0.0983,
+                0.0873
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "forest",
+          "color": "#6b8060"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.008,
+                0.009
+              ],
+              [
+                0.0125,
+                0.011
+              ],
+              [
+                0.0145,
+                0.059
+              ],
+              [
+                0.0095,
+                0.06
+              ],
+              [
+                0.008,
+                0.009
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "forest",
+          "color": "#6b8060"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.04,
+                0.012
+              ],
+              [
+                0.048,
+                0.014
+              ],
+              [
+                0.05,
+                0.032
+              ],
+              [
+                0.0415,
+                0.033
+              ],
+              [
+                0.04,
+                0.012
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "forest",
+          "color": "#6b8060"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.082,
+                0.05
+              ],
+              [
+                0.089,
+                0.052
+              ],
+              [
+                0.091,
+                0.09
+              ],
+              [
+                0.0835,
+                0.091
+              ],
+              [
+                0.082,
+                0.05
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "forest",
+          "color": "#6b8060"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.015,
+                0.07
+              ],
+              [
+                0.045,
+                0.072
+              ],
+              [
+                0.047,
+                0.076
+              ],
+              [
+                0.0165,
+                0.077
+              ],
+              [
+                0.015,
+                0.07
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "forest",
+          "color": "#6b8060"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.066,
+                0.006
+              ],
+              [
+                0.0715,
+                0.008
+              ],
+              [
+                0.0735,
+                0.046
+              ],
+              [
+                0.0675,
+                0.047
+              ],
+              [
+                0.066,
+                0.006
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "river"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              0.071,
+              0.0
+            ],
+            [
+              0.072599,
+              0.0025
+            ],
+            [
+              0.074146,
+              0.005
+            ],
+            [
+              0.075594,
+              0.0075
+            ],
+            [
+              0.076896,
+              0.01
+            ],
+            [
+              0.07801,
+              0.0125
+            ],
+            [
+              0.078901,
+              0.015
+            ],
+            [
+              0.079541,
+              0.0175
+            ],
+            [
+              0.079909,
+              0.02
+            ],
+            [
+              0.079994,
+              0.0225
+            ],
+            [
+              0.079793,
+              0.025
+            ],
+            [
+              0.079312,
+              0.0275
+            ],
+            [
+              0.078567,
+              0.03
+            ],
+            [
+              0.077581,
+              0.0325
+            ],
+            [
+              0.076386,
+              0.035
+            ],
+            [
+              0.07502,
+              0.0375
+            ],
+            [
+              0.073526,
+              0.04
+            ],
+            [
+              0.071951,
+              0.0425
+            ],
+            [
+              0.070346,
+              0.045
+            ],
+            [
+              0.068762,
+              0.0475
+            ],
+            [
+              0.06725,
+              0.05
+            ],
+            [
+              0.065856,
+              0.0525
+            ],
+            [
+              0.064626,
+              0.055
+            ],
+            [
+              0.063599,
+              0.0575
+            ],
+            [
+              0.062807,
+              0.06
+            ],
+            [
+              0.062276,
+              0.0625
+            ],
+            [
+              0.062022,
+              0.065
+            ],
+            [
+              0.062053,
+              0.0675
+            ],
+            [
+              0.06237,
+              0.07
+            ],
+            [
+              0.06296,
+              0.0725
+            ],
+            [
+              0.063807,
+              0.075
+            ],
+            [
+              0.064882,
+              0.0775
+            ],
+            [
+              0.066152,
+              0.08
+            ],
+            [
+              0.067576,
+              0.0825
+            ],
+            [
+              0.069108,
+              0.085
+            ],
+            [
+              0.070701,
+              0.0875
+            ],
+            [
+              0.072304,
+              0.09
+            ],
+            [
+              0.073865,
+              0.0925
+            ],
+            [
+              0.075335,
+              0.095
+            ],
+            [
+              0.076667,
+              0.0975
+            ],
+            [
+              0.077819,
+              0.1
+            ],
+            [
+              0.078754,
+              0.1025
+            ],
+            [
+              0.079442,
+              0.105
+            ],
+            [
+              0.079862,
+              0.1075
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "road",
+          "id": "GS-R01"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              0.016,
+              0.016
+            ],
+            [
+              0.021,
+              0.031
+            ],
+            [
+              0.036,
+              0.037
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "road",
+          "id": "GS-R02"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              0.034,
+              0.058
+            ],
+            [
+              0.035,
+              0.049
+            ],
+            [
+              0.036,
+              0.037
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "kind": "road",
+          "id": "GS-R03"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              0.036,
+              0.037
+            ],
+            [
+              0.055,
+              0.039
+            ],
+            [
+              0.06,
+              0.05
+            ],
+            [
+              0.067,
+              0.055
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "observations": [],
+  "inspections": [],
+  "protocols": [
+    {
+      "id": "protocol-moisture",
+      "name": "Вологість ґрунту",
+      "method": "volumetric_probe",
+      "unit": "m3/m3",
+      "required_fields": [
+        "observed_at",
+        "depth_cm",
+        "calibration_ref",
+        "value"
+      ],
+      "version": 1
+    },
+    {
+      "id": "protocol-dcp",
+      "name": "DCP — сирі глибини та удари",
+      "method": "dcp",
+      "unit": "mm/blow",
+      "required_fields": [
+        "depth_mm",
+        "blows",
+        "hammer_mass_kg",
+        "cone_geometry",
+        "procedure_ref"
+      ],
+      "version": 1
+    },
+    {
+      "id": "protocol-ci",
+      "name": "Cone Index",
+      "method": "cone_index",
+      "unit": "kPa",
+      "required_fields": [
+        "force_n",
+        "cone_area_mm2",
+        "speed_mm_s",
+        "depth_cm",
+        "procedure_ref"
+      ],
+      "version": 1
+    }
+  ],
+  "models": [
+    {
+      "id": "warm-soil-6h-v1",
+      "name": "Двошаровий водний баланс",
+      "status": "research",
+      "scope": "Теплий незамерзлий природний ґрунт",
+      "synthetic": true,
+      "calibrated": false,
+      "card_ref": "docs/10-FIRST-SLICE-BASELINE-CARD.md",
+      "reason": "Немає затверджених польових параметрів та незалежної валідації."
+    },
+    {
+      "id": "vehicle-risk-v1",
+      "name": "Механізм-специфічна оцінка транспорту",
+      "status": "blocked",
+      "scope": "Прохідність / колія / пошкодження / тяга",
+      "synthetic": false,
+      "calibrated": false,
+      "reason": "Потрібні дорожня конструкція, транспортний envelope та незалежні outcomes."
+    }
+  ],
+  "envelopes": [],
+  "constraints": [
+    {
+      "id": "culvert-014",
+      "asset_id": "GS-014",
+      "segment_id": "GS-R03",
+      "kind": "culvert",
+      "status": "unknown",
+      "reason": "Стан водопропускної споруди невідомий",
+      "version": 1
+    }
+  ],
+  "tickets": [],
+  "subscriptions": [],
+  "notifications": [],
+  "demo_forcing": {
+    "step_hours": 6,
+    "kind": "synthetic_only",
+    "source_ref": "explicit-synthetic-forcing/v1"
+  },
+  "feature_map": []
+}

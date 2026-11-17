@@ -1,0 +1,101 @@
+{
+  "contract_version": "1.1",
+  "synthetic": true,
+  "production_mode": false,
+  "context": {
+    "assessment_date": "2027-03-15",
+    "gross_mass_t": 20,
+    "timezone": "Europe/Kyiv",
+    "assessment_mode": "forecast",
+    "computed_at": "2027-03-14T06:00:00Z",
+    "forecast_issue_time": "2027-03-14T05:00:00Z",
+    "knowledge_cutoff": "2027-03-14T05:00:00Z",
+    "local_day_utc_interval": {
+      "start": "2027-03-14T22:00:00Z",
+      "end": "2027-03-15T22:00:00Z"
+    },
+    "day_aggregation_policy": "required_support_unknown_dominates_worst_scenario_v1"
+  },
+  "segment_id": "DEMO-R03-v1",
+  "assessment_level": "validated_domain",
+  "environmental_condition": {
+    "status": "available",
+    "condition": "adverse",
+    "reason_codes": [],
+    "condition_policy_ref": "policy:required_support_unknown_dominates_worst_scenario_v1",
+    "physical_series_ref": "artifact:water-series-3"
+  },
+  "mobility": {
+    "kind": "calibrated_probability",
+    "risk": 0.42,
+    "probability_bounds": null,
+    "outcome": "rut_depth_exceeded_after_n_passes",
+    "estimand": "operation_time_risk",
+    "operation_ref": "operation:one-return-v1",
+    "configuration_aggregation": {
+      "kind": "known_weighted_mixture",
+      "policy_ref": "policy:config-weights-v1"
+    },
+    "traction_loss": "assessed",
+    "pass_policy_ref": "policy:one-return-v1",
+    "vehicle_envelope_ref": "envelope:20t-v1",
+    "calibration_report_ref": "report:mobility-v1",
+    "reason_codes": []
+  },
+  "recovery": {
+    "kind": "vehicle_condition_recovery",
+    "status": "forecast_distribution",
+    "distribution_kind": "exact_scenario_distribution",
+    "reference_time": "2027-03-14T06:00:00Z",
+    "horizon_end": "2027-03-22T06:00:00Z",
+    "event_time_convention": "confirmation_end",
+    "event_definition_version": "demo-vehicle-v1",
+    "probability_by_horizon": 0.6,
+    "cdf": [
+      {
+        "time": "2027-03-18T06:00:00Z",
+        "probability": 0.2
+      },
+      {
+        "time": "2027-03-20T06:00:00Z",
+        "probability": 0.6
+      }
+    ],
+    "cdf_bounds": [],
+    "bounds_by_horizon": null,
+    "quantiles": {
+      "p10": "2027-03-18T06:00:00Z",
+      "p50": "2027-03-20T06:00:00Z",
+      "p90": null
+    },
+    "known_weight_mass": 1.0,
+    "lost_weight_mass": 0.0,
+    "ensemble_policy_ref": "policy:nominal-trajectory-weights-v1",
+    "missing_mass_reasons": [],
+    "calibration_status": "calibrated",
+    "recovery_calibration_report_ref": "report:recovery-v1",
+    "vehicle_envelope_ref": "envelope:20t-v1",
+    "matching_report_ref": "report:matching-v1",
+    "reason_codes": []
+  },
+  "source_supports": [
+    {
+      "quantity": "soil_moisture",
+      "source_ref": "artifact:water-series-3",
+      "transform_ref": "transform:model-derived-v1",
+      "geometry_ref": "geometry:analysis-unit-1",
+      "depth_ref": "depth:0-20cm",
+      "estimate_kind": "model_derived",
+      "temporal_interval": {
+        "start": "2027-03-14T06:00:00Z",
+        "end": "2027-03-22T06:00:00Z"
+      }
+    }
+  ],
+  "provenance": {
+    "release_id": "release-demo-4",
+    "run_id": "run-demo-4",
+    "input_digest": "sha256:4444444444444444444444444444444444444444444444444444444444444444",
+    "model_version": "synthetic-g2-v1"
+  }
+}

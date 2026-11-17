@@ -1,0 +1,25 @@
+name: groundsense
+services:
+  database:
+    image: postgis/postgis:17-3.5@sha256:01a6a70e41e6c4467c8f55f6063555ed72db2d6662cd0d571040d42eadaeb6f6
+    container_name: groundsense-db
+    restart: unless-stopped
+    env_file: ../runtime/groundsense.env
+    ports:
+      - "127.0.0.1:12113:5432"
+    volumes:
+      - groundsense_pg:/var/lib/postgresql/data
+      - ./database-init.sql:/docker-entrypoint-initdb.d/01-spatial.sql:ro
+    shm_size: 128mb
+    mem_limit: 512m
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U groundsense -d groundsense"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+volumes:
+  groundsense_pg:
